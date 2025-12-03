@@ -132,6 +132,36 @@ export const Navbar = () => {
                     </NavLink>
                   </NavigationMenuLink>
                 </li>
+                <li>
+                  <NavigationMenuLink
+                    asChild
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    <NavLink to={paths.root.home.getHref()}>
+                      {t("navbar.outcome_exhibition.history")}
+                    </NavLink>
+                  </NavigationMenuLink>
+                </li>
+                <li>
+                  <NavigationMenuLink
+                    asChild
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    <NavLink to={paths.root.home.getHref()}>
+                      {t("navbar.outcome_exhibition.economics")}
+                    </NavLink>
+                  </NavigationMenuLink>
+                </li>
+                <li>
+                  <NavigationMenuLink
+                    asChild
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    <NavLink to={paths.root.home.getHref()}>
+                      {t("navbar.outcome_exhibition.society")}
+                    </NavLink>
+                  </NavigationMenuLink>
+                </li>
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
