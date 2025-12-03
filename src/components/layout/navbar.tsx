@@ -76,7 +76,7 @@ export const Navbar = () => {
                     className={navigationMenuTriggerStyle()}
                   >
                     <NavLink to={paths.root.home.getHref()}>
-                      {t("navbar.outcome_exhibition.showcase")}
+                      {t("navbar.outcome_exhibition.stall")}
                     </NavLink>
                   </NavigationMenuLink>
                 </li>
@@ -97,7 +97,7 @@ export const Navbar = () => {
                     className={navigationMenuTriggerStyle()}
                   >
                     <NavLink to={paths.root.home.getHref()}>
-                      {t("navbar.outcome_exhibition.medicine")}
+                      {t("navbar.outcome_exhibition.society")}
                     </NavLink>
                   </NavigationMenuLink>
                 </li>
@@ -107,7 +107,7 @@ export const Navbar = () => {
                     className={navigationMenuTriggerStyle()}
                   >
                     <NavLink to={paths.root.home.getHref()}>
-                      {t("navbar.outcome_exhibition.biology")}
+                      {t("navbar.outcome_exhibition.politics_and_economics")}
                     </NavLink>
                   </NavigationMenuLink>
                 </li>
@@ -137,7 +137,7 @@ export const Navbar = () => {
                     className={navigationMenuTriggerStyle()}
                   >
                     <NavLink to={paths.root.home.getHref()}>
-                      {t("navbar.outcome_exhibition.society")}
+                      {t("navbar.outcome_exhibition.medicine")}
                     </NavLink>
                   </NavigationMenuLink>
                 </li>
@@ -147,7 +147,7 @@ export const Navbar = () => {
                     className={navigationMenuTriggerStyle()}
                   >
                     <NavLink to={paths.root.home.getHref()}>
-                      {t("navbar.outcome_exhibition.politics_and_economics")}
+                      {t("navbar.outcome_exhibition.biology")}
                     </NavLink>
                   </NavigationMenuLink>
                 </li>
