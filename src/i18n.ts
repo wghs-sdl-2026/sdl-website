@@ -8,7 +8,12 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "zh-Hant",
+    supportedLngs: ["en", "ja", "zh-Hant"],
+    fallbackLng: {
+      "zh": ["zh-Hant"],
+      "zh-TW": ["zh-Hant"],
+      "default": ["zh-Hant"]
+    },
     interpolation: {
       escapeValue: false,
     },
