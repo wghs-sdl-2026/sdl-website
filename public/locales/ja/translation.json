@@ -13,12 +13,10 @@
   "navbar.outcome_exhibition.showcase": "展示グループ",
   "navbar.outcome_exhibition.medicine": "医学と薬学",
   "navbar.outcome_exhibition.biology": "生物学",
-  "navbar.outcome_exhibition.computer_science": "コンピューターサイエンス",
   "navbar.outcome_exhibition.engineering": "工学",
   "navbar.outcome_exhibition.chemistry": "化学",
-  "navbar.outcome_exhibition.history": "歴史",
-  "navbar.outcome_exhibition.economics": "経済",
   "navbar.outcome_exhibition.society": "社会",
+  "navbar.outcome_exhibition.politics_and_economics": "政治と経済",
   "navbar.about_outcome_exhibition": "結果発表について",
   "navbar.staff_list": "スタッフリスト"
 }

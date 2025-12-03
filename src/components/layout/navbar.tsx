@@ -59,7 +59,7 @@ export const Navbar = () => {
                   </div>
                 </li>
               </ul>
-              <ul className="w-full grid grid-flow-col grid-rows-3 gap-2">
+              <ul className="w-full grid grid-flow-col grid-rows-2 gap-2">
                 <li>
                   <NavigationMenuLink
                     asChild
@@ -80,7 +80,16 @@ export const Navbar = () => {
                     </NavLink>
                   </NavigationMenuLink>
                 </li>
-                <div />
+                <li>
+                  <NavigationMenuLink
+                    asChild
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    <NavLink to={paths.root.home.getHref()}>
+                      {t("navbar.outcome_exhibition.poster")}
+                    </NavLink>
+                  </NavigationMenuLink>
+                </li>
                 <li>
                   <NavigationMenuLink
                     asChild
@@ -98,17 +107,6 @@ export const Navbar = () => {
                   >
                     <NavLink to={paths.root.home.getHref()}>
                       {t("navbar.outcome_exhibition.biology")}
-                    </NavLink>
-                  </NavigationMenuLink>
-                </li>
-                <div />
-                <li>
-                  <NavigationMenuLink
-                    asChild
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    <NavLink to={paths.root.home.getHref()}>
-                      {t("navbar.outcome_exhibition.computer_science")}
                     </NavLink>
                   </NavigationMenuLink>
                 </li>
@@ -138,27 +136,17 @@ export const Navbar = () => {
                     className={navigationMenuTriggerStyle()}
                   >
                     <NavLink to={paths.root.home.getHref()}>
-                      {t("navbar.outcome_exhibition.history")}
-                    </NavLink>
-                  </NavigationMenuLink>
-                </li>
-                <li>
-                  <NavigationMenuLink
-                    asChild
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    <NavLink to={paths.root.home.getHref()}>
-                      {t("navbar.outcome_exhibition.economics")}
-                    </NavLink>
-                  </NavigationMenuLink>
-                </li>
-                <li>
-                  <NavigationMenuLink
-                    asChild
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    <NavLink to={paths.root.home.getHref()}>
                       {t("navbar.outcome_exhibition.society")}
+                    </NavLink>
+                  </NavigationMenuLink>
+                </li>
+                <li>
+                  <NavigationMenuLink
+                    asChild
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    <NavLink to={paths.root.home.getHref()}>
+                      {t("navbar.outcome_exhibition.politics_and_economics")}
                     </NavLink>
                   </NavigationMenuLink>
                 </li>

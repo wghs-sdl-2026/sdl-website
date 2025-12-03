@@ -13,12 +13,10 @@
   "navbar.outcome_exhibition.showcase": "展示組",
   "navbar.outcome_exhibition.medicine": "醫藥",
   "navbar.outcome_exhibition.biology": "生物",
-  "navbar.outcome_exhibition.computer_science": "資訊",
   "navbar.outcome_exhibition.engineering": "工程",
   "navbar.outcome_exhibition.chemistry": "化學",
-  "navbar.outcome_exhibition.history": "歷史",
-  "navbar.outcome_exhibition.economics": "經濟",
   "navbar.outcome_exhibition.society": "社會",
+  "navbar.outcome_exhibition.politics_and_economics": "政經",
   "navbar.about_outcome_exhibition": "關於成果發表",
   "navbar.staff_list": "工作人員名單"
 }
