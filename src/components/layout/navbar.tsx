@@ -21,8 +21,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useTranslation } from "react-i18next";
 
-export const Navbar = () => {
-  const { t, i18n } = useTranslation();
+export function Navbar() {
+  const { i18n } = useTranslation();
+
+
+  const { t } = useTranslation();
 
   return (
     <div className="w-full flex flex-row justify-between p-3">
