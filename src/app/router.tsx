@@ -1,17 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { paths } from "@/config/paths.ts";
 import { Root } from "@/app/routes/root.tsx";
-import { StaffList } from "./routes/staff-list.tsx";
-import { Abouts } from "./routes/Abouts.tsx";
-import { Poster } from "./routes/poster.tsx";
-import { Presentation } from "./routes/presentation.tsx";
-import { Stall } from "./routes/stall.tsx"
-import { Society } from "./routes/society.tsx";
-import { Politics_and_economics } from "./routes/politics_and_economics.tsx";
-import { Chemistry } from "./routes/chemistry.tsx";
-import { Engineering } from "./routes/engineering.tsx";
-import { Medicine } from "./routes/medicine.tsx";
-import { Biology } from "./routes/biology.tsx";
+import { StaffList, Abouts, Poster, Presentation, Stall, Society, Politics_and_economics, Chemistry, Engineering, Medicine, Biology } from "./routes/index.ts";
 const createAppRouter = () =>
   createBrowserRouter([
     {
