@@ -13,5 +13,14 @@ export const paths = {
     Abouts: {
       getHref: () => "/abouts",
     },
+    Presentation: {
+      getHref: () => "/presentation",
+    },
+    Stall: {
+      getHref: () => "/stall",
+    },
+    Poster: {
+      getHref: () => "/poster",
+    },
   },
 };

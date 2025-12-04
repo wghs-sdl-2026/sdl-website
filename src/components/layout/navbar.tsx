@@ -65,7 +65,7 @@ export const Navbar = () => {
                     asChild
                     className={navigationMenuTriggerStyle()}
                   >
-                    <NavLink to={paths.root.home.getHref()}>
+                    <NavLink to={paths.root.Presentation.getHref()}>
                       {t("navbar.outcome_exhibition.presentation")}
                     </NavLink>
                   </NavigationMenuLink>
@@ -75,7 +75,7 @@ export const Navbar = () => {
                     asChild
                     className={navigationMenuTriggerStyle()}
                   >
-                    <NavLink to={paths.root.home.getHref()}>
+                    <NavLink to={paths.root.Stall.getHref()}>
                       {t("navbar.outcome_exhibition.stall")}
                     </NavLink>
                   </NavigationMenuLink>
@@ -85,7 +85,7 @@ export const Navbar = () => {
                     asChild
                     className={navigationMenuTriggerStyle()}
                   >
-                    <NavLink to={paths.root.home.getHref()}>
+                    <NavLink to={paths.root.Poster.getHref()}>
                       {t("navbar.outcome_exhibition.poster")}
                     </NavLink>
                   </NavigationMenuLink>
