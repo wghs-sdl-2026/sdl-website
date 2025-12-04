@@ -22,5 +22,23 @@ export const paths = {
     Poster: {
       getHref: () => "/poster",
     },
+    Society: {
+      getHref: () => "/society",
+    },
+    Politics_and_economics: {
+      getHref: () => "/politics_and_economics",
+    },
+    Engineering: {
+      getHref: () => "/engineering",
+    },
+    Chemistry: {
+      getHref: () => "/chemistry",
+    },
+    Medicine: {
+      getHref: () => "/medicine",
+    },
+    Biology: {
+      getHref: () => "/biology",
+    },
   },
 };

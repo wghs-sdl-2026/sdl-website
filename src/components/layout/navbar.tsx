@@ -95,7 +95,7 @@ export const Navbar = () => {
                     asChild
                     className={navigationMenuTriggerStyle()}
                   >
-                    <NavLink to={paths.root.home.getHref()}>
+                    <NavLink to={paths.root.Society.getHref()}>
                       {t("navbar.outcome_exhibition.society")}
                     </NavLink>
                   </NavigationMenuLink>
@@ -105,7 +105,7 @@ export const Navbar = () => {
                     asChild
                     className={navigationMenuTriggerStyle()}
                   >
-                    <NavLink to={paths.root.home.getHref()}>
+                    <NavLink to={paths.root.Politics_and_economics.getHref()}>
                       {t("navbar.outcome_exhibition.politics_and_economics")}
                     </NavLink>
                   </NavigationMenuLink>
@@ -115,7 +115,7 @@ export const Navbar = () => {
                     asChild
                     className={navigationMenuTriggerStyle()}
                   >
-                    <NavLink to={paths.root.home.getHref()}>
+                    <NavLink to={paths.root.Engineering.getHref()}>
                       {t("navbar.outcome_exhibition.engineering")}
                     </NavLink>
                   </NavigationMenuLink>
@@ -125,7 +125,7 @@ export const Navbar = () => {
                     asChild
                     className={navigationMenuTriggerStyle()}
                   >
-                    <NavLink to={paths.root.home.getHref()}>
+                    <NavLink to={paths.root.Chemistry.getHref()}>
                       {t("navbar.outcome_exhibition.chemistry")}
                     </NavLink>
                   </NavigationMenuLink>
@@ -135,7 +135,7 @@ export const Navbar = () => {
                     asChild
                     className={navigationMenuTriggerStyle()}
                   >
-                    <NavLink to={paths.root.home.getHref()}>
+                    <NavLink to={paths.root.Medicine.getHref()}>
                       {t("navbar.outcome_exhibition.medicine")}
                     </NavLink>
                   </NavigationMenuLink>
@@ -145,7 +145,7 @@ export const Navbar = () => {
                     asChild
                     className={navigationMenuTriggerStyle()}
                   >
-                    <NavLink to={paths.root.home.getHref()}>
+                    <NavLink to={paths.root.Biology.getHref()}>
                       {t("navbar.outcome_exhibition.biology")}
                     </NavLink>
                   </NavigationMenuLink>
