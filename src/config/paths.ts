@@ -10,5 +10,8 @@ export const paths = {
     StaffList: {
       getHref: () => "/staff-list",
     },
+    Abouts: {
+      getHref: () => "/abouts",
+    },
   },
 };

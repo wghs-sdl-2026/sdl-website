@@ -1,7 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { paths } from "@/config/paths.ts";
 import { Root } from "@/app/routes/root.tsx";
-import { StaffList } from "./routes/staff-list";
+import { StaffList } from "./routes/staff-list.tsx";
+import { Abouts } from "./routes/Abouts.tsx";
 
 const createAppRouter = () =>
   createBrowserRouter([
@@ -20,6 +21,10 @@ const createAppRouter = () =>
         {
           path: "staff-list",
           element: <StaffList />,
+        },
+        {
+          path: "abouts",
+          element: <Abouts />,
         },
       ],
     },

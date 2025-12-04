@@ -59,7 +59,7 @@ export const Navbar = () => {
                   </div>
                 </li>
               </ul>
-              <ul className="w-full grid grid-flow-col grid-rows-3 gap-2">
+              <ul className="w-full grid grid-flow-col grid-rows-2 gap-2">
                 <li>
                   <NavigationMenuLink
                     asChild
@@ -158,7 +158,7 @@ export const Navbar = () => {
               asChild
               className={navigationMenuTriggerStyle()}
             >
-              <NavLink to={paths.root.home.getHref()}>
+              <NavLink to={paths.root.Abouts.getHref()}>
                 {t("navbar.about_outcome_exhibition")}
               </NavLink>
             </NavigationMenuLink>
