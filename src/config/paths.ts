@@ -7,5 +7,8 @@ export const paths = {
       path: "",
       getHref: () => "/",
     },
+    StaffList: {
+      getHref: () => "/staff-list",
+    },
   },
 };
