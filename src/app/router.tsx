@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { paths } from "@/config/paths.ts";
 import { Root } from "@/app/routes/root.tsx";
+//import { Posters, Stall, Presentations, Biology, Chemistry, Engineering, Medicine, PoliticsAndEconomics, Society} from "./routes/exports.tsx";
 
 const createAppRouter = () =>
   createBrowserRouter([
