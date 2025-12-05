@@ -1,0 +1,11 @@
+export { StaffList } from "./staff-list.tsx";
+export { Abouts } from "./abouts.tsx";
+export { Poster } from "./poster.tsx";
+export { Presentation } from "./presentation.tsx";
+export { Stall } from "./stall.tsx";
+export { Society } from "./all_works/society.tsx";
+export { Politics_and_economics } from "./all_works/politics_and_economics.tsx";
+export { Chemistry } from "./all_works/chemistry.tsx";
+export { Engineering } from "./all_works/engineering.tsx";
+export { Medicine } from "./all_works/medicine.tsx";
+export { Biology } from "./all_works/biology.tsx";

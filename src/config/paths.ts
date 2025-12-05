@@ -7,37 +7,37 @@ export const paths = {
       path: "",
       getHref: () => "/",
     },
-    StaffList: {
+    staffList: {
       getHref: () => "/staff-list",
     },
-    Abouts: {
+    abouts: {
       getHref: () => "/abouts",
     },
-    Presentation: {
+    presentation: {
       getHref: () => "/presentation",
     },
-    Stall: {
+    stall: {
       getHref: () => "/stall",
     },
-    Poster: {
+    poster: {
       getHref: () => "/poster",
     },
-    Society: {
+    society: {
       getHref: () => "/society",
     },
-    Politics_and_economics: {
+    politics_and_economics: {
       getHref: () => "/politics_and_economics",
     },
-    Engineering: {
+    engineering: {
       getHref: () => "/engineering",
     },
-    Chemistry: {
+    chemistry: {
       getHref: () => "/chemistry",
     },
-    Medicine: {
+    medicine: {
       getHref: () => "/medicine",
     },
-    Biology: {
+    biology: {
       getHref: () => "/biology",
     },
   },
