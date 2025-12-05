@@ -40,5 +40,11 @@ export const paths = {
     biology: {
       getHref: () => "/biology",
     },
+    allworks: {
+      getHref: () => "/allworks",
+    },
+    allpresentations: {
+      getHref: () => "/allpresentations",
+    },
   },
 };

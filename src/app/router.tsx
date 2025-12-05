@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { paths } from "@/config/paths.ts";
 import { Root } from "@/app/routes/root.tsx";
-import { StaffList, Abouts, Poster, Presentation, Stall, Society, Politics_and_economics, Chemistry, Engineering, Medicine, Biology } from "./routes/subpage_menu.ts";
+import { AllWorks,AllPresentations,StaffList, Abouts, Poster, Presentation, Stall, Society, Politics_and_economics, Chemistry, Engineering, Medicine, Biology } from "./routes/subpage_menu.ts";
 const createAppRouter = () =>
   createBrowserRouter([
     {
@@ -59,6 +59,14 @@ const createAppRouter = () =>
         {
           path: "biology",
           element: <Biology />,
+        },
+        {
+          path: "allworks",
+          element: <AllWorks />,
+        },
+        {
+          path: "allpresentations",
+          element: <AllPresentations />,
         },
       ],
     },

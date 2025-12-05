@@ -9,3 +9,5 @@ export { Chemistry } from "./all_works/chemistry.tsx";
 export { Engineering } from "./all_works/engineering.tsx";
 export { Medicine } from "./all_works/medicine.tsx";
 export { Biology } from "./all_works/biology.tsx";
+export { AllWorks } from "./all_works/all_works.tsx"
+export { AllPresentations } from "./all_presentations.tsx"

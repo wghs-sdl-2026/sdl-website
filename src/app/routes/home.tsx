@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button.tsx";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router";
+import { paths } from "@/config/paths.ts";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -9,11 +11,15 @@ export const Home = () => {
       <div className="grid gap-20 mt-40 mb-30 text-4xl text-stone-700 dark:text-stone-300 justify-items-center text-center break-keep">
         <h2 className="whitespace-pre-wrap">{t("home.title")}</h2>
         <div className="flex gap-5">
-          <Button variant="secondary" className="w-[200px]">
-            {t("home.exhibited_works_introduction")}
+          <Button variant="secondary" className="w-[200px]" asChild>
+            <NavLink to={paths.root.allpresentations.getHref()}>
+              {t("home.exhibited_works_introduction")}
+            </NavLink>
           </Button>
-          <Button variant="secondary" className="w-[200px]">
-            {t("home.all_works")}
+          <Button variant="secondary" className="w-[200px]" asChild>
+            <NavLink to={paths.root.allworks.getHref()}>
+              {t("home.all_works")}
+            </NavLink>
           </Button>
         </div>
       </div>
