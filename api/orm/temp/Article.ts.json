@@ -1,0 +1,71 @@
+{
+  "data": {
+    "_id": 0,
+    "properties": {
+      "id": {
+        "name": "id",
+        "kind": "scalar",
+        "primary": true,
+        "length": 36,
+        "type": "string",
+        "array": false,
+        "runtimeType": "string"
+      },
+      "title": {
+        "name": "title",
+        "kind": "scalar",
+        "type": "text",
+        "getter": false,
+        "setter": false,
+        "array": false,
+        "runtimeType": "string"
+      },
+      "author": {
+        "name": "author",
+        "kind": "scalar",
+        "type": "text",
+        "getter": false,
+        "setter": false,
+        "array": false,
+        "runtimeType": "string"
+      },
+      "content": {
+        "name": "content",
+        "kind": "scalar",
+        "type": "text",
+        "getter": false,
+        "setter": false,
+        "array": false,
+        "runtimeType": "string"
+      },
+      "link": {
+        "name": "link",
+        "kind": "scalar",
+        "type": "text",
+        "getter": false,
+        "setter": false,
+        "array": false,
+        "runtimeType": "string"
+      }
+    },
+    "primaryKeys": ["id"],
+    "filters": {},
+    "hooks": {},
+    "indexes": [],
+    "uniques": [],
+    "className": "Article",
+    "path": "./src/modules/article/article.entity.ts",
+    "name": "Article",
+    "abstract": false,
+    "internal": true,
+    "constructorParams": [],
+    "toJsonParams": [],
+    "useCache": true,
+    "compositePK": false,
+    "simplePK": true,
+    "collection": "article"
+  },
+  "origin": "./src/modules/article/article.entity.ts",
+  "hash": "f9953fe1f66cac1597f694a791fe30ed",
+  "version": "6.6.2"
+}
