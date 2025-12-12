@@ -1,8 +1,8 @@
 {
-  "name": "api",
+  "name": "self-directed-learning-outcome-exhibition-api",
   "version": "1.0.0",
   "description": "",
-  "license": "ISC",
+  "license": "AGPL-3.0",
   "author": "",
   "type": "module",
   "main": "index.js",
