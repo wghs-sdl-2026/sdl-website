@@ -163,6 +163,16 @@ export const Navbar = () => {
               asChild
               className={navigationMenuTriggerStyle()}
             >
+              <NavLink to={paths.root.resources.getHref()}>
+                {t("navbar.resources")}
+              </NavLink>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              asChild
+              className={navigationMenuTriggerStyle()}
+            >
               <NavLink to={paths.root.about.getHref()}>
                 {t("navbar.about_outcome_exhibition")}
               </NavLink>
@@ -175,16 +185,6 @@ export const Navbar = () => {
             >
               <NavLink to={paths.root.staff.getHref()}>
                 {t("navbar.staff_list")}
-              </NavLink>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              asChild
-              className={navigationMenuTriggerStyle()}
-            >
-              <NavLink to={paths.root.resources.getHref()}>
-                {t("navbar.resources")}
               </NavLink>
             </NavigationMenuLink>
           </NavigationMenuItem>

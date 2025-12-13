@@ -5,6 +5,7 @@
   "home.theme_description0": "waiting for update",
   "home.theme_description1": "waiting for update",
   "home.theme_description2": "waiting for update",
+
   "navbar.home": "首頁",
   "navbar.outcome_exhibition": "成果發表",
   "navbar.outcome_exhibition.exhibition": "發表會",
@@ -18,7 +19,17 @@
   "navbar.outcome_exhibition.chemistry": "化學",
   "navbar.outcome_exhibition.society": "社會",
   "navbar.outcome_exhibition.politics_and_economics": "政經",
+  "navbar.resources": "資源",
   "navbar.about_outcome_exhibition": "關於成果發表",
   "navbar.staff_list": "工作人員名單",
-  "navbar.resources": "資源"
+
+  "about.description_0": "waiting for update",
+
+  "staff.coordinator_group.title": "總召組",
+  "staff.coordinator_group.members": "總　召：, 副總召：",
+  "staff.art_group.title": "美術組",
+  "staff.art_group.members": "waiting for update",
+
+  "presentation.biology.items.1": "biology 1",
+  "presentation.biology.articles.1": "biology"
 }
