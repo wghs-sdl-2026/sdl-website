@@ -9,7 +9,7 @@ export const Root = () => {
   const { toggleSidebar } = useSidebar();
 
   return (
-    <div className="w-screen h-screen">
+    <div className="w-screen h-screen max-md:pt-12">
       <Button
         className="hidden max-md:block fixed bottom-8 right-8"
         onClick={toggleSidebar}
