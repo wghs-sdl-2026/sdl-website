@@ -3,17 +3,16 @@
 Languages: English, [繁體中文](README_zh.md)
 
 This repository contains the source files for the website of 2026 Taipei Wego Private Senior High School Grade 11
-Self-Directed Learning Outcome Exhibition. It includes three independent works:
+Self-Directed Learning Outcome Exhibition. It includes two independent works:
 
-| Work           | Description                                                                                     |
-|----------------|-------------------------------------------------------------------------------------------------|
-| [api](api)     | The backend server that handles requests                                                        |
-| [orm](api/orm) | The ORM files that define the structure of the database and entities used by the backend server |
-| [webui](webui) | The web user interface that users interact with                                                 |
+| Work           | Description                                     |
+|----------------|-------------------------------------------------|
+| [api](api)     | The backend server that handles requests        |
+| [webui](webui) | The web user interface that users interact with |
 
 ## License
 
-This repository contains multiple independent works (programs), including but not limited to `api/`, `api/orm/`, and
+This repository contains multiple independent works (programs), including but not limited to `api/` and
 `webui/`.
 
 Each program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public

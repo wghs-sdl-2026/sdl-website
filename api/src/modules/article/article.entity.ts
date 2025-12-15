@@ -15,5 +15,11 @@ export class Article {
   content!: string;
 
   @Property({ type: "text" })
-  link!: string;
+  link!: string; //  external link
+
+  @Property({ type: "text" })
+  field!: string;
+
+  @Property()
+  division: string | undefined;
 }
