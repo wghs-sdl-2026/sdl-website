@@ -5,7 +5,7 @@ lib
 node_modules
 dist
 
-api/orm/temp
-api/orm/src/migrations/.snapshot-*.json
+api/temp
+api/src/migrations/.snapshot-*.json
 
 .env

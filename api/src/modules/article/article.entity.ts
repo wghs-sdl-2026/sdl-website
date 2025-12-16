@@ -22,4 +22,7 @@ export class Article {
 
   @Property()
   division: string | undefined;
+
+  @Property()
+  multilanguage!: { lang: string; id: string }[];
 }
