@@ -11,18 +11,21 @@ export class Article {
   @Property({ type: "text" })
   author!: string;
 
+  @Property({ length: 21 })
+  authorId!: string;
+
   @Property({ type: "text" })
-  content!: string;
+  summary!: string;
+
+  @Property({ type: "text" })
+  contents!: string;
 
   @Property({ type: "text" })
   link!: string; //  external link
 
-  @Property({ type: "text" })
-  field!: string;
-
   @Property()
-  division: string | undefined;
+  tags!: string[];
 
-  @Property()
+  @Property({ type: "json" })
   multilanguage!: { lang: string; id: string }[];
 }

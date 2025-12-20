@@ -23,54 +23,59 @@ export const paths = {
       getHref: () => "/posters",
     },
 
+    allWorks: {
+      path: "all_works",
+      getHref: () => "/all_works",
+    },
+
     works: {
       wrapper: {
         path: "works/:workType",
       },
 
       biology: {
-        path: "/works/biology",
+        path: "works/biology",
         getHref: () => "/works/biology",
       },
 
       chemistry: {
-        path: "/works/chemistry",
+        path: "works/chemistry",
         getHref: () => "/works/chemistry",
       },
 
       engineering: {
-        path: "/works/engineering",
+        path: "works/engineering",
         getHref: () => "/works/engineering",
       },
 
       medicine: {
-        path: "/works/medicine",
+        path: "works/medicine",
         getHref: () => "/works/medicine",
       },
 
       politics_and_economics: {
-        path: "/works/politics_and_economics",
+        path: "works/politics_and_economics",
         getHref: () => "/works/politics_and_economics",
       },
 
       society: {
-        path: "/works/society",
+        path: "works/society",
         getHref: () => "/works/society",
       },
     },
 
     about: {
-      path: "/about",
+      path: "about",
       getHref: () => "/about",
     },
 
     staff: {
-      path: "/staff",
+      path: "staff",
       getHref: () => "/staff",
     },
 
     resources: {
-      path: "/resources",
+      path: "resources",
       getHref: () => "/resources",
     },
   },

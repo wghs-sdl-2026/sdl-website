@@ -1,18 +1,29 @@
 import { Button } from "@/components/ui/button.tsx";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router";
+import { paths } from "@/config/paths.ts";
 
 export const Home = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   return (
     <div className="w-full h-full">
       <div className="grid gap-20 mt-40 mb-30 text-4xl text-stone-700 dark:text-stone-300 justify-items-center text-center break-keep">
-        <h2 className="whitespace-pre-wrap">{t("home.title")}</h2>
+        <h1 className="whitespace-pre-wrap">{t("home.title")}</h1>
         <div className="flex flex-col md:flex-row gap-5">
-          <Button variant="secondary" className="w-[200px]">
+          <Button
+            variant="secondary"
+            className="w-[200px]"
+            onClick={() => navigate(paths.root.about.getHref())}
+          >
             {t("home.exhibited_works_introduction")}
           </Button>
-          <Button variant="secondary" className="w-[200px]">
+          <Button
+            variant="secondary"
+            className="w-[200px]"
+            onClick={() => navigate(paths.root.allWorks.getHref())}
+          >
             {t("home.all_works")}
           </Button>
         </div>

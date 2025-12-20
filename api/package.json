@@ -26,6 +26,8 @@
     "@mikro-orm/seeder": "^6.6.2",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "fastify": "^5.6.2"
+    "fastify": "^5.6.2",
+    "nanoid": "^5.1.6",
+    "zod": "^4.2.1"
   }
 }
