@@ -14,14 +14,14 @@ export const Home = () => {
         <div className="flex flex-col md:flex-row gap-5">
           <Button
             variant="secondary"
-            className="w-[200px]"
-            onClick={() => navigate(paths.root.about.getHref())}
+            className="w-[200px] cursor-pointer"
+            onClick={() => navigate(paths.root.exhibitedWorksIntroduction.getHref())}
           >
             {t("home.exhibited_works_introduction")}
           </Button>
           <Button
             variant="secondary"
-            className="w-[200px]"
+            className="w-[200px] cursor-pointer"
             onClick={() => navigate(paths.root.allWorks.getHref())}
           >
             {t("home.all_works")}

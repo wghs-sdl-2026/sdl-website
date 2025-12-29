@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Separator } from "@/components/ui/separator"
 
 interface groupProps {
   group: string;
@@ -6,19 +7,13 @@ interface groupProps {
 
 export const StaffItem = ({ group }: groupProps) => {
   const { t } = useTranslation();
-  const member: string[] = t(`staff.${group}.members`)
-    .split(",")
-    .map((s) => s.trim());
   return (
-    <div>
-      <h1 className="text-2xl mb-2">{t(`staff.${group}.title`)}</h1>
-      <ul className="ml-10 text-xl">
-        {member.map((item: string, i: number) => (
-          <li key={i} className="mb-2">
-            {item}
-          </li>
-        ))}
-      </ul>
+    <div className="flex flex-col gap-2">
+      <h1 className="text-2xl text-stone-700 dark:text-stone-300">{t(`staff.${group}.title`)}</h1>
+      <Separator />
+      <div className="text-lg ml-4">
+        <p>{/* TODO: backend */}</p>
+      </div>
     </div>
   );
 };

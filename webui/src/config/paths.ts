@@ -10,22 +10,27 @@ export const paths = {
 
     presentation: {
       path: "presentation",
-      getHref: () => "/presentation",
+      getHref: () => "presentation",
     },
 
     booth: {
       path: "stall",
-      getHref: () => "/stall",
+      getHref: () => "stall",
     },
 
     posters: {
       path: "posters",
-      getHref: () => "/posters",
+      getHref: () => "posters",
+    },
+
+    exhibitedWorksIntroduction: {
+      path: "exhibited-works-introduction",
+      getHref: () => "exhibited-works-introduction",
     },
 
     allWorks: {
       path: "all_works",
-      getHref: () => "/all_works",
+      getHref: () => "all_works",
     },
 
     works: {
@@ -35,48 +40,48 @@ export const paths = {
 
       biology: {
         path: "works/biology",
-        getHref: () => "/works/biology",
+        getHref: () => "works/biology",
       },
 
       chemistry: {
         path: "works/chemistry",
-        getHref: () => "/works/chemistry",
+        getHref: () => "works/chemistry",
       },
 
       engineering: {
         path: "works/engineering",
-        getHref: () => "/works/engineering",
+        getHref: () => "works/engineering",
       },
 
       medicine: {
         path: "works/medicine",
-        getHref: () => "/works/medicine",
+        getHref: () => "works/medicine",
       },
 
       politics_and_economics: {
         path: "works/politics_and_economics",
-        getHref: () => "/works/politics_and_economics",
+        getHref: () => "works/politics_and_economics",
       },
 
       society: {
         path: "works/society",
-        getHref: () => "/works/society",
+        getHref: () => "works/society",
       },
     },
 
     about: {
       path: "about",
-      getHref: () => "/about",
+      getHref: () => "about",
     },
 
     staff: {
       path: "staff",
-      getHref: () => "/staff",
+      getHref: () => "staff",
     },
 
     resources: {
       path: "resources",
-      getHref: () => "/resources",
+      getHref: () => "resources",
     },
   },
 };

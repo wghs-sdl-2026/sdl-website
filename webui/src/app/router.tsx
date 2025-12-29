@@ -38,9 +38,25 @@ const createAppRouter = () =>
           },
         },
         {
+          path: paths.root.exhibitedWorksIntroduction.path,
+          lazy: async () => {
+            const { ExhibitedWorksIntroduction } = await import(
+              "@/app/routes/exhibited-works-introduction"
+            );
+            return { Component: ExhibitedWorksIntroduction };
+          },
+        },
+        {
+          path: paths.root.allWorks.path,
+          lazy: async () => {
+            const { AllWorks } = await import("@/app/routes/all-works");
+            return { Component: AllWorks };
+          },
+        },
+        {
           path: paths.root.works.wrapper.path,
           lazy: async () => {
-            const { WorkWrapper } = await import("@/app/routes/all_works/root");
+            const { WorkWrapper } = await import("./routes/works/root");
             return { Component: WorkWrapper };
           },
         },
