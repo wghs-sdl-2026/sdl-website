@@ -2,14 +2,13 @@ use std::fs::{write, OpenOptions};
 use std::io::Write;
 use std::path::PathBuf;
 use log::{error, info};
-use sea_orm::Database;
+use sea_orm::{ConnectOptions, Database};
 use crate::models::user::UserModel;
+use crate::orm::connection::db_connect;
 use crate::orm::user::add_user;
 
 pub async fn import_users(csv_file: PathBuf, out_file: Option<PathBuf>) {
-  let db_path = std::env::var("DB_URL").expect("db url not set");
-  let db_conn = Database::connect(db_path).await.expect("unable to connect to db");
-  
+  let db_conn = db_connect().await;
   let mut buf = String::new();
 
   match csv::Reader::from_path(csv_file) {

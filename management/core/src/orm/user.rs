@@ -27,7 +27,7 @@ pub async fn add_user(db: DbConn, username: String, password: String, admin: boo
     admin: Set(admin),
   };
 
-  model.update(&db).await?;
+  model.insert(&db).await?;
 
   Ok(id)
 }

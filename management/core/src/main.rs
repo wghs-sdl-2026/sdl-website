@@ -12,6 +12,8 @@ mod user;
 #[tokio::main]
 async fn main() {
   let _ = dotenv::dotenv();
+  simple_logger::init().unwrap();
+  
 
   let opt = Cli::parse();
   match opt.command {

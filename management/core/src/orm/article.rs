@@ -23,7 +23,7 @@ pub async fn add_article(db: DbConn, article_model: ArticleModel) -> Result<Stri
     multilanguage: Set(Default::default()),
   };
 
-  model.update(&db).await?;
+  model.insert(&db).await?;
 
   Ok(id)
 }
