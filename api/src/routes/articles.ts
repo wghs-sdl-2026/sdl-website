@@ -78,5 +78,5 @@ const newArticle = async (req: Request, res: Response) => {
 
 articlesRouter.use(express.json());
 articlesRouter.get("/", getArticles);
-articlesRouter.post("/", newArticle); //  TODO: verification
+// articlesRouter.post("/", newArticle);  //  do not use when released
 articlesRouter.get(paths.root.articles.articleById.path, getArticleById);

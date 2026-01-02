@@ -1,18 +1,21 @@
-import { Entity, PrimaryKey, Property } from "@mikro-orm/core";
+import { Entity, Index, PrimaryKey, Property } from "@mikro-orm/core";
 
 @Entity()
+// @Index({ name: "article_tags_gin", properties: ["tags"], type: "GIN" })
 export class Article {
   @PrimaryKey({ length: 21 })
   id!: string; //  nanoid
 
+  @Index({ type: "fulltext" })
   @Property({ type: "text" })
   title!: string;
 
-  @Property({ type: "text" })
-  author!: string;
+  @Index({ type: "GIN" })
+  @Property()
+  author!: string[];
 
-  @Property({ length: 21 })
-  authorId!: string;
+  @Property()
+  authorId!: string[];
 
   @Property({ type: "text" })
   summary!: string;
@@ -23,6 +26,7 @@ export class Article {
   @Property({ type: "text" })
   link!: string; //  external link
 
+  @Index({ type: "GIN" })
   @Property()
   tags!: string[];
 
