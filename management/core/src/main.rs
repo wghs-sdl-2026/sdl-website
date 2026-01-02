@@ -20,7 +20,7 @@ async fn main() {
     Commands::Article(article_opt) => {
       match article_opt.command {
         ArticleCommands::Import(article_add_opt) => {
-          import_articles(article_add_opt.file, article_add_opt.out).await;
+          import_articles(article_add_opt.file, article_add_opt.out, article_add_opt.qrcode, article_add_opt.url_prefix).await;
         }
       }
     }

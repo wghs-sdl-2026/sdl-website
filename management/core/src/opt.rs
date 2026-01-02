@@ -28,7 +28,11 @@ pub enum ArticleCommands {
 pub struct ArticleAddOpt {
   pub file: PathBuf,
   #[arg(short, long)]
-  pub out: Option<PathBuf>
+  pub out: Option<PathBuf>,
+  #[arg(short, long, default_value_t=false)]
+  pub qrcode: bool,
+  #[arg(short, long, default_value_t={String::new()})]
+  pub url_prefix: String,
 }
 
 #[derive(Args, Debug)]
