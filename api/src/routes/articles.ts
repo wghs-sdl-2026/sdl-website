@@ -7,6 +7,7 @@ import { paths } from "../config/paths.js";
 export const articlesRouter = express.Router();
 
 const getArticlesBody = z.object({
+  keyword: z.string(),
   tags: z.array(z.string()),
 });
 const getArticlesQuery = z.object({
@@ -19,7 +20,10 @@ const getArticles = async (req: Request, res: Response) => {
 
   if (bodyParseResult.success && queryParseResult.success) {
     const ormRes = await dbListArticles(
-      { tags: bodyParseResult.data.tags },
+      {
+        keyword: bodyParseResult.data.keyword,
+        tags: bodyParseResult.data.tags,
+      },
       {
         limit: queryParseResult.data.limit,
         offset: queryParseResult.data.offset,
