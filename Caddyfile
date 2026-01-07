@@ -1,8 +1,10 @@
 sdl2026.wegohs.info {
-    root * ./webui
-    file_server
-    try_files {path} /index.html
     handle /api/* {
         reverse_proxy localhost:3000
+    }
+    handle {
+        root * ./webui
+        file_server
+        try_files {path} /index.html
     }
 }
