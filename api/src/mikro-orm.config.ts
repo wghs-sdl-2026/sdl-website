@@ -10,7 +10,7 @@ export default defineConfig({
   port: parseInt(process.env.DB_PORT || "5432"),
   user: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD,
-  entities: ["dist/**/*.entity.js"],
+  entities: ["./**/*.entity.js"],
   entitiesTs: ["src/**/*.entity.ts"],
   metadataProvider: TsMorphMetadataProvider,
   extensions: [SeedManager, Migrator],

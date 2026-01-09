@@ -4,6 +4,7 @@ import { FilterQuery, FindOptions, serialize } from "@mikro-orm/core";
 import { nanoid } from "nanoid";
 
 interface TagProps {
+  keyword: string;
   tags: string[];
 }
 interface ListProps {
@@ -11,15 +12,29 @@ interface ListProps {
   offset: number | undefined;
 }
 export const dbListArticles = async (
-  { tags }: TagProps,
+  { keyword, tags }: TagProps,
   { limit, offset }: ListProps,
 ) => {
-  let where: FilterQuery<Article> = {};
-  if (tags.length > 0) where.tags = { $overlap: tags };
+  let keyword_array = keyword.match(/\p{L}+/gu) ?? [];
 
-  const [articles, count] = await em
-    .fork()
-    .findAndCount(Article, where, { limit: limit, offset: offset });
+  const qb = em.fork().createQueryBuilder(Article).select("*");
+
+  keyword_array.forEach((word) => {
+    qb.andWhere(
+      `(title ILIKE ? OR EXISTS (SELECT 1 FROM unnest(author) au WHERE au ILIKE ?))`,
+      [`%${word}%`, `%${word}%`],
+    );
+  });
+
+  if (tags.length > 0) {
+    qb.andWhere("tags && ?", [tags]);
+  }
+
+  qb.limit(limit);
+
+  qb.offset(offset);
+
+  const [articles, count] = await qb.getResultAndCount();
 
   return {
     count: count,
