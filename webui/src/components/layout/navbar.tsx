@@ -4,8 +4,6 @@ import {
   NavigationMenuItem,
   NavigationMenuList,
   navigationMenuTriggerStyle,
-  NavigationMenuTrigger,
-  NavigationMenuContent,
 } from "@/components/ui/navigation-menu.tsx";
 import { NavLink } from "react-router";
 import { paths } from "@/config/paths.ts";
@@ -39,124 +37,15 @@ export const Navbar = () => {
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>
-              {t("navbar.outcome_exhibition")}
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="w-full h-full grid grid-cols-3 mb-2 gap-2 break-keep">
-                <li>
-                  <div className="mx-2 mt-2">
-                    <p className="text-muted-foreground text-sm leading-none">
-                      {t("navbar.outcome_exhibition.exhibition")}
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div className="col-span-2 mx-4 mt-2">
-                    <p className="text-muted-foreground text-sm leading-none">
-                      {t("navbar.outcome_exhibition.all_works")}
-                    </p>
-                  </div>
-                </li>
-              </ul>
-              <ul className="w-full grid grid-flow-col grid-rows-3 gap-2">
-                <li>
-                  <NavigationMenuLink
-                    asChild
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    <NavLink to={paths.root.presentation.getHref()}>
-                      {t("navbar.outcome_exhibition.presentation")}
-                    </NavLink>
-                  </NavigationMenuLink>
-                </li>
-                <li>
-                  <NavigationMenuLink
-                    asChild
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    <NavLink to={paths.root.booth.getHref()}>
-                      {t("navbar.outcome_exhibition.booth")}
-                    </NavLink>
-                  </NavigationMenuLink>
-                </li>
-                <li>
-                  <NavigationMenuLink
-                    asChild
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    <NavLink to={paths.root.posters.getHref()}>
-                      {t("navbar.outcome_exhibition.poster")}
-                    </NavLink>
-                  </NavigationMenuLink>
-                </li>
-                <li>
-                  <NavigationMenuLink
-                    asChild
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    <NavLink to={paths.root.works.society.getHref()}>
-                      {t("navbar.outcome_exhibition.society")}
-                    </NavLink>
-                  </NavigationMenuLink>
-                </li>
-                <li>
-                  <NavigationMenuLink
-                    asChild
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    <NavLink
-                      to={paths.root.works.politics_and_economics.getHref()}
-                    >
-                      {t("navbar.outcome_exhibition.politics_and_economics")}
-                    </NavLink>
-                  </NavigationMenuLink>
-                </li>
-                <div />
-                <li>
-                  <NavigationMenuLink
-                    asChild
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    <NavLink to={paths.root.works.engineering.getHref()}>
-                      {t("navbar.outcome_exhibition.engineering")}
-                    </NavLink>
-                  </NavigationMenuLink>
-                </li>
-                <li>
-                  <NavigationMenuLink
-                    asChild
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    <NavLink to={paths.root.works.chemistry.getHref()}>
-                      {t("navbar.outcome_exhibition.chemistry")}
-                    </NavLink>
-                  </NavigationMenuLink>
-                </li>
-                <div />
-                <li>
-                  <NavigationMenuLink
-                    asChild
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    <NavLink to={paths.root.works.medicine.getHref()}>
-                      {t("navbar.outcome_exhibition.medicine")}
-                    </NavLink>
-                  </NavigationMenuLink>
-                </li>
-                <li>
-                  <NavigationMenuLink
-                    asChild
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    <NavLink to={paths.root.works.biology.getHref()}>
-                      {t("navbar.outcome_exhibition.biology")}
-                    </NavLink>
-                  </NavigationMenuLink>
-                </li>
-                <div />
-              </ul>
-            </NavigationMenuContent>
+            <NavigationMenuLink
+              asChild
+              className={navigationMenuTriggerStyle()}
+            >
+              <NavLink to={""}>
+                {/* TODO link */}
+                {t("navbar.outcome_exhibition")}
+              </NavLink>
+            </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuLink

@@ -3,26 +3,32 @@ import z from "zod";
 import { Request, Response } from "express";
 import { dbGetArticle, dbListArticles, dbNewArticle } from "../orm/articles.js";
 import { paths } from "../config/paths.js";
+import { isArray } from "node:util";
 
 export const articlesRouter = express.Router();
 
-const getArticlesBody = z.object({
-  keyword: z.string(),
-  tags: z.array(z.string()),
-});
 const getArticlesQuery = z.object({
-  limit: z.int().optional(),
-  offset: z.int().optional(),
+  limit: z.coerce.number().int().optional(),
+  offset: z.coerce.number().int().optional(),
+  keyword: z.string(),
+  tags: z
+    .union([z.string(), z.array(z.string())])
+    .optional()
+    .transform((value) => {
+      if (value === undefined) {
+        return [];
+      }
+      return Array.isArray(value) ? value : [value];
+    }),
 });
 const getArticles = async (req: Request, res: Response) => {
-  const bodyParseResult = getArticlesBody.safeParse(req.body);
   const queryParseResult = getArticlesQuery.safeParse(req.query);
 
-  if (bodyParseResult.success && queryParseResult.success) {
+  if (queryParseResult.success) {
     const ormRes = await dbListArticles(
       {
-        keyword: bodyParseResult.data.keyword,
-        tags: bodyParseResult.data.tags,
+        keyword: queryParseResult.data.keyword,
+        tags: queryParseResult.data.tags,
       },
       {
         limit: queryParseResult.data.limit,

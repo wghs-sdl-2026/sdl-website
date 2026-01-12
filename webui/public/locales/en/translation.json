@@ -27,5 +27,11 @@
   "staff.art_group.title": "Art Group",
   "staff.art_group.members": "waiting for update",
   "presentation.biology.items.1": "Biology group",
-  "presentation.biology.articles.1": "Article"
+  "presentation.biology.articles.1": "Article",
+  "article.search.enter_keywords": "Please enter the keywords, separated by spaces",
+  "article.search.page": "Page {{page}} / {{max_page}}",
+  "not_found.page_not_found": "The page requested does not exist.",
+  "not_found.return_to_home": "Return to home page",
+  "error.general_error": "An error has occurred",
+  "error.no_server_connection": "Unable to connect to server"
 }

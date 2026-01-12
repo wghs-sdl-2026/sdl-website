@@ -26,6 +26,10 @@
   "staff.coordinator_group.members": "waiting for update",
   "staff.art_group.title": "美術グループ",
   "staff.art_group.members": "waiting for update",
-  "presentation.biology.items.1": "A",
-  "presentation.biology.articles.1": "B"
+  "article.search.enter_keywords": "キーワードを半角空白で区切って入力してください",
+  "article.search.page": "ページ　{{page}} / {{max_page}}",
+  "not_found.page_not_found": "ページが見つかりませんでした",
+  "not_found.return_to_home": "ホームページへ",
+  "error.general_error": "エラーが発生しました",
+  "error.no_server_connection": "通信エラー"
 }

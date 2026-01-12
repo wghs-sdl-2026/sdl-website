@@ -26,6 +26,10 @@
   "staff.coordinator_group.members": "總　召：, 副總召：",
   "staff.art_group.title": "美術組",
   "staff.art_group.members": "waiting for update",
-  "presentation.biology.items.1": "biology 1",
-  "presentation.biology.articles.1": "biology"
+  "article.search.enter_keywords": "請輸入關鍵字，並以半形空格分隔",
+  "article.search.page": "第{{page}} / {{max_page}} 頁",
+  "not_found.page_not_found": "此頁面不存在",
+  "not_found.return_to_home": "回到首頁",
+  "error.general_error": "發生錯誤",
+  "error.no_server_connection": "無法連線至伺服器"
 }
