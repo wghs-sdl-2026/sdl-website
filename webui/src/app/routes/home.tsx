@@ -15,16 +15,9 @@ export const Home = () => {
           <Button
             variant="secondary"
             className="w-[200px] cursor-pointer"
-            onClick={() => navigate(paths.root.exhibitedWorksIntroduction.getHref())}
+            onClick={() => navigate(paths.root.articleSearch.getHref())}
           >
-            {t("home.exhibited_works_introduction")}
-          </Button>
-          <Button
-            variant="secondary"
-            className="w-[200px] cursor-pointer"
-            onClick={() => navigate(paths.root.allWorks.getHref())}
-          >
-            {t("home.all_works")}
+            {t("home.browse_works")}
           </Button>
         </div>
       </div>

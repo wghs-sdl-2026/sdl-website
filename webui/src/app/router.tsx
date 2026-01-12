@@ -17,50 +17,6 @@ const createAppRouter = () =>
           },
         },
         {
-          path: paths.root.presentation.path,
-          lazy: async () => {
-            const { Presentation } = await import("@/app/routes/presentation");
-            return { Component: Presentation };
-          },
-        },
-        {
-          path: paths.root.booth.path,
-          lazy: async () => {
-            const { Booth } = await import("@/app/routes/booth");
-            return { Component: Booth };
-          },
-        },
-        {
-          path: paths.root.posters.path,
-          lazy: async () => {
-            const { Poster } = await import("@/app/routes/poster");
-            return { Component: Poster };
-          },
-        },
-        {
-          path: paths.root.exhibitedWorksIntroduction.path,
-          lazy: async () => {
-            const { ExhibitedWorksIntroduction } = await import(
-              "@/app/routes/exhibited-works-introduction"
-            );
-            return { Component: ExhibitedWorksIntroduction };
-          },
-        },
-        {
-          path: paths.root.allWorks.path,
-          lazy: async () => {
-            const { AllWorks } = await import("@/app/routes/all-works");
-            return { Component: AllWorks };
-          },
-        },
-        {
-          path: paths.root.works.wrapper.path,
-          lazy: async () => {
-            const { WorkWrapper } = await import("./routes/works/root");
-            return { Component: WorkWrapper };
-          },
-        },
-        {
           path: paths.root.about.path,
           lazy: async () => {
             const { About } = await import("@/app/routes/about");
@@ -81,7 +37,32 @@ const createAppRouter = () =>
             return { Component: Resources };
           },
         },
+        {
+          path: paths.root.articleSearch.path,
+          lazy: async () => {
+            const { ArticleSearch } = await import(
+              "@/app/routes/articles/search.tsx"
+            );
+            return { Component: ArticleSearch };
+          },
+        },
+        {
+          path: paths.root.article.path,
+          lazy: async () => {
+            const { ArticleWrapper } = await import(
+              "@/app/routes/articles/article"
+            );
+            return { Component: ArticleWrapper };
+          },
+        },
       ],
+    },
+    {
+      path: "*",
+      lazy: async () => {
+        const { NotFound } = await import("@/app/routes/not-found");
+        return { Component: NotFound };
+      },
     },
   ]);
 

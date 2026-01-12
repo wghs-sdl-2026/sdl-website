@@ -4,17 +4,11 @@ import {
   SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
-  SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar.tsx";
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible.tsx";
 import { ChevronDown, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { paths } from "@/config/paths.ts";
@@ -47,105 +41,13 @@ export const NavSidebar = () => {
                     </NavLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
-              </SidebarMenu>
-            </SidebarGroupContent>
-          </SidebarGroup>
-          <Collapsible defaultOpen className="group/collapsible">
-            <SidebarGroup>
-              <SidebarGroupLabel asChild>
-                <CollapsibleTrigger>
-                  {t("navbar.outcome_exhibition.exhibition")}
-                  <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
-                </CollapsibleTrigger>
-              </SidebarGroupLabel>
-              <SidebarGroupContent>
-                <CollapsibleContent>
-                  <SidebarMenuItem key="presentation">
-                    <SidebarMenuButton asChild>
-                      <NavLink to={paths.root.presentation.getHref()}>
-                        {t("navbar.outcome_exhibition.presentation")}
-                      </NavLink>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                  <SidebarMenuItem key="booth">
-                    <SidebarMenuButton asChild>
-                      <NavLink to={paths.root.booth.getHref()}>
-                        {t("navbar.outcome_exhibition.booth")}
-                      </NavLink>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                  <SidebarMenuItem key="poster">
-                    <SidebarMenuButton asChild>
-                      <NavLink to={paths.root.booth.getHref()}>
-                        {t("navbar.outcome_exhibition.poster")}
-                      </NavLink>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                </CollapsibleContent>
-              </SidebarGroupContent>
-            </SidebarGroup>
-          </Collapsible>
-          <Collapsible defaultOpen className="group/collapsible">
-            <SidebarGroup>
-              <SidebarGroupLabel asChild>
-                <CollapsibleTrigger>
-                  {t("navbar.outcome_exhibition.all_works")}
-                  <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
-                </CollapsibleTrigger>
-              </SidebarGroupLabel>
-              <SidebarGroupContent>
-                <CollapsibleContent>
-                  <SidebarMenuItem key="society">
-                    <SidebarMenuButton asChild>
-                      <NavLink to={paths.root.works.society.getHref()}>
-                        {t("navbar.outcome_exhibition.society")}
-                      </NavLink>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                  <SidebarMenuItem key="politics_and_economics">
-                    <SidebarMenuButton asChild>
-                      <NavLink
-                        to={paths.root.works.politics_and_economics.getHref()}
-                      >
-                        {t("navbar.outcome_exhibition.politics_and_economics")}
-                      </NavLink>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                  <SidebarMenuItem key="engineering">
-                    <SidebarMenuButton asChild>
-                      <NavLink to={paths.root.works.engineering.getHref()}>
-                        {t("navbar.outcome_exhibition.engineering")}
-                      </NavLink>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                  <SidebarMenuItem key="chemistry">
-                    <SidebarMenuButton asChild>
-                      <NavLink to={paths.root.works.chemistry.getHref()}>
-                        {t("navbar.outcome_exhibition.chemistry")}
-                      </NavLink>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                  <SidebarMenuItem key="medicine">
-                    <SidebarMenuButton asChild>
-                      <NavLink to={paths.root.works.medicine.getHref()}>
-                        {t("navbar.outcome_exhibition.medicine")}
-                      </NavLink>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                  <SidebarMenuItem key="biology">
-                    <SidebarMenuButton asChild>
-                      <NavLink to={paths.root.works.biology.getHref()}>
-                        {t("navbar.outcome_exhibition.biology")}
-                      </NavLink>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                </CollapsibleContent>
-              </SidebarGroupContent>
-            </SidebarGroup>
-          </Collapsible>
-          <SidebarGroup>
-            <SidebarGroupContent>
-              <SidebarMenu>
+                <SidebarMenuItem key="outcome_exhibition">
+                  <SidebarMenuButton asChild>
+                    <NavLink to={paths.root.articleSearch.getHref()}>
+                      {t("navbar.outcome_exhibition")}
+                    </NavLink>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
                 <SidebarMenuItem key="resources">
                   <SidebarMenuButton asChild>
                     <NavLink to={paths.root.resources.getHref()}>
