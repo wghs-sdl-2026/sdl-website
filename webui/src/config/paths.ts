@@ -8,11 +8,6 @@ export const paths = {
       getHref: () => "/",
     },
 
-    exhibitedWorksIntroduction: {
-      path: "exhibited-works-introduction",
-      getHref: () => "/exhibited-works-introduction",
-    },
-
     articleSearch: {
       path: "article",
       getHref: () => "/article",
@@ -22,11 +17,6 @@ export const paths = {
       path: "article/:articleId",
       getHref: () => "/article/:articleId",
       getHrefId: (id: string) => `/article/${id}`,
-    },
-
-    allWorks: {
-      path: "all_works",
-      getHref: () => "/all_works",
     },
 
     about: {

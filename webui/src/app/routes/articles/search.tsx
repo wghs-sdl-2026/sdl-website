@@ -13,7 +13,8 @@ import { PaginationSelector } from "@/components/ui/pagination-selector.tsx";
 export const ArticleSearch = () => {
   const { t, i18n } = useTranslation();
   const [query, setQuery] = useState<string>("");
-  const [tags, setTags] = useState<string[]>([]);
+  // const [tags, setTags] = useState<string[]>([]);
+  const [tags] = useState<string[]>([]);
   const [articles, setArticles] = useState<ArticleInfoShort[]>([]);
   const [offset, setOffset] = useState<number>(0);
   const [count, setCount] = useState<number>(0);

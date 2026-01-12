@@ -41,8 +41,7 @@ export const Navbar = () => {
               asChild
               className={navigationMenuTriggerStyle()}
             >
-              <NavLink to={""}>
-                {/* TODO link */}
+              <NavLink to={paths.root.articleSearch.getHref()}>
                 {t("navbar.outcome_exhibition")}
               </NavLink>
             </NavigationMenuLink>
