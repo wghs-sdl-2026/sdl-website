@@ -42,7 +42,7 @@ export const Navbar = () => {
               className={navigationMenuTriggerStyle()}
             >
               <NavLink to={paths.root.articleSearch.getHref()}>
-                {t("navbar.outcome_exhibition")}
+                {t("navbar.works")}
               </NavLink>
             </NavigationMenuLink>
           </NavigationMenuItem>

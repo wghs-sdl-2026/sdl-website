@@ -41,10 +41,10 @@ export const NavSidebar = () => {
                     </NavLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
-                <SidebarMenuItem key="outcome_exhibition">
+                <SidebarMenuItem key="works">
                   <SidebarMenuButton asChild>
                     <NavLink to={paths.root.articleSearch.getHref()}>
-                      {t("navbar.outcome_exhibition")}
+                      {t("navbar.works")}
                     </NavLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
