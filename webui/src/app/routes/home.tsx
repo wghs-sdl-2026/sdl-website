@@ -9,7 +9,7 @@ export const Home = () => {
 
   return (
     <div className="w-full h-full">
-      <div className="grid gap-20 mt-40 mb-30 text-4xl text-stone-700 dark:text-stone-300 justify-items-center text-center break-keep">
+      <div className="grid gap-20 mt-40 mb-30 text-3xl md:text-4xl text-stone-700 dark:text-stone-300 justify-items-center text-center break-keep">
         <h1 className="whitespace-pre-wrap">{t("home.title")}</h1>
         <div className="flex flex-col md:flex-row gap-5">
           <Button

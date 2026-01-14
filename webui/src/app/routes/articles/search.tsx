@@ -12,6 +12,7 @@ import { PaginationSelector } from "@/components/ui/pagination-selector.tsx";
 
 export const ArticleSearch = () => {
   const { t, i18n } = useTranslation();
+  const [isComposing, setIsComposing] = useState<boolean>(false);
   const [query, setQuery] = useState<string>("");
   // const [tags, setTags] = useState<string[]>([]);
   const [tags] = useState<string[]>([]);
@@ -21,6 +22,7 @@ export const ArticleSearch = () => {
   const limit = 20;
 
   useEffect(() => {
+    if (isComposing) return;
     const getArticles = async () => {
       if (offset < 0) {
         setOffset(0);
@@ -56,11 +58,19 @@ export const ArticleSearch = () => {
     <div className="w-full h-full p-8">
       <div>
         <Input
-          placeholder={t("article.search.enter_keywords")}
-          onInput={(event) => {
+          onCompositionStart={() => setIsComposing(true)}
+          onCompositionEnd={(event) => {
+            setIsComposing(false);
             setQuery(event.currentTarget.value);
             setOffset(0);
           }}
+          onInput={(event) => {
+            if (!isComposing) {
+              setQuery(event.currentTarget.value);
+              setOffset(0);
+            }
+          }}
+          placeholder={t("article.search.enter_keywords")}
         />
         {/* TODO tags */}
         {/*<div>*/}
@@ -77,9 +87,9 @@ export const ArticleSearch = () => {
               to={paths.root.article.getHrefId(article.id)}
             >
               <div className="w-full flex flex-col gap-2">
-                <div className="w-full flex flex-row justify-between gap-4 items-end">
-                  <div className="flex gap-4 items-end">
-                    <p>{article.title}</p>
+                <div className="w-full flex flex-col md:flex-row justify-between gap-4 md:items-end">
+                  <div className="flex flex-col md:flex-row gap-4 md:items-end">
+                    <p className="text-justify">{article.title}</p>
                     <p className="text-sm">
                       {(() => {
                         if (
@@ -116,6 +126,7 @@ export const ArticleSearch = () => {
         limit={limit}
         count={count}
       />
+      <div className="pb-4" />
     </div>
   );
 };

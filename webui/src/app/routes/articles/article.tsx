@@ -57,8 +57,8 @@ export const Article = ({ id }: ArticleProps) => {
       {articleInfo !== undefined && (
         <div className="w-full flex flex-col p-10 gap-4">
           <div className="w-full flex flex-col gap-1">
-            <p className="text-2xl">{articleInfo.title}</p>
-            <div className="w-full flex flex-row justify-between">
+            <p className="text-2xl text-justify">{articleInfo.title}</p>
+            <div className="w-full flex flex-col md:flex-row justify-between">
               <p className="text-sm text-stone-500">
                 {(() => {
                   if (articleInfo !== undefined) {
