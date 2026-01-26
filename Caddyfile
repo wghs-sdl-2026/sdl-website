@@ -2,7 +2,7 @@ sdl2026.wegohs.info {
     handle /api/* {
         reverse_proxy localhost:3000
     }
-    handle /assets/* {
+    handle_path /assets/* {
         root * {$CADDY_ROOT}/assets
         file_server
     }
