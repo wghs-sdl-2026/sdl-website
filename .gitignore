@@ -5,6 +5,7 @@ lib
 node_modules
 dist
 target
+log
 
 api/temp
 api/src/migrations/.snapshot-*.json

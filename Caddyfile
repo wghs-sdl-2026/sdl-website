@@ -2,8 +2,12 @@ sdl2026.wegohs.info {
     handle /api/* {
         reverse_proxy localhost:3000
     }
+    handle /assets/* {
+        root * {$CADDY_ROOT}/assets
+        file_server
+    }
     handle {
-        root * ./webui
+        root * {$CADDY_ROOT}/webui
         file_server
         try_files {path} /index.html
     }
